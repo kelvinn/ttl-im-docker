@@ -3,4 +3,4 @@
 # Abort the script if any command fails
 set -e
 
-docker build -t ttl-im-worker .
+docker build -t ttl-im-docker .

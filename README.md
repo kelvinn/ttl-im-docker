@@ -9,4 +9,4 @@ MY_IP
 
 I hijacked the pure python ping module; details in the header.
 
-You can find this on Docker Hub here: https://hub.docker.com/r/zephell/ttl-im-worker/
+You can find this on Docker Hub here: https://hub.docker.com/r/zephell/ttl-im-docker/
