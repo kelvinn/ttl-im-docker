@@ -4,5 +4,5 @@
 set -e
 
 docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-docker tag ttl-im-worker zephell/ttl-im-docker:$SEMAPHORE_BUILD_NUMBER-$SEMAPHORE_BRANCH_ID
+docker tag ttl-im-docker zephell/ttl-im-docker:$SEMAPHORE_BUILD_NUMBER-$SEMAPHORE_BRANCH_ID
 docker push zephell/ttl-im-docker:$SEMAPHORE_BUILD_NUMBER-$SEMAPHORE_BRANCH_ID
