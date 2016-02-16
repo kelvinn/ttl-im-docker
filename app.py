@@ -3,7 +3,6 @@
 
 import os
 import requests
-from datetime import datetime
 from ping import Ping
 from time import sleep
 
