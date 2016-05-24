@@ -4,5 +4,5 @@
 set -e
 
 docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-docker tag ttl-im-docker zephell/ttl-im-docker:$SNAP_COMMIT_SHORT-$SNAP_PIPELINE_COUNTER
-docker push zephell/ttl-im-docker:$SNAP_COMMIT_SHORT-$SNAP_PIPELINE_COUNTER
+docker tag ttl-im-docker zephell/ttl-im-docker:$SNAP_PIPELINE_COUNTER-$SNAP_COMMIT_SHORT
+docker push zephell/ttl-im-docker:$SNAP_PIPELINE_COUNTER-$SNAP_COMMIT_SHORT
