@@ -1,5 +1,7 @@
 # README
 
+[![Build Status](https://snap-ci.com/kelvinn/ttl-im-docker/branch/master/build_image)](https://snap-ci.com/kelvinn/ttl-im-docker/branch/master)
+
 Ping an IP and send the result to stated.io for graphing.
 
 The following two environment variables need to be set:
