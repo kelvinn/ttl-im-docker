@@ -12,6 +12,6 @@ source ~/venv/bin/activate
 
 dig +short myip.opendns.com @resolver1.opendns.com
 
-pip install fabric
+pip install fabric==1.14.1
 
 fab -H root@$TARGET_HOST deploy:1.1.$TRAVIS_BUILD_NUMBER
