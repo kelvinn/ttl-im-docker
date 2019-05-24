@@ -5,12 +5,6 @@ services:
 
 before_script:
   - bash ./scripts/build.sh
-  
+
 script:
   - bash ./scripts/push.sh
-
-deploy:
-  provider: script
-  script: bash ./scripts/deploy.sh $TARGET_HOST
-  on:
-    branch: master
