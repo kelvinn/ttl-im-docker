@@ -47,7 +47,7 @@ jobs:
           push: true
           tags: |
             zephell/ttl-im-docker:latest
-            zephell/ttl-im-docker:1.1.${{ env.GITHUB_RUN_ID }|
+            zephell/ttl-im-docker:1.1.${{ env.GITHUB_RUN_ID }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
