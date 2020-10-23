@@ -1,6 +1,6 @@
 # README
 
-[![Build Status](https://semaphoreci.com/api/v1/kelvinism/ttl-im-docker/branches/master/badge.svg)](https://semaphoreci.com/kelvinism/ttl-im-docker)
+![Docker](https://github.com/kelvinn/ttl-im-docker/workflows/Docker/badge.svg)
 
 Ping an IP and send the result to stated.io for graphing.
 
