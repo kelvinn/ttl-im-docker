@@ -29,6 +29,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Define ENV VARS
+        id: define_env
+        run:  echo "::set-output name=github-sha-short::$(echo $GITHUB_SHA | cut -c 1-7)"
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -47,7 +51,7 @@ jobs:
           push: true
           tags: |
             zephell/ttl-im-docker:latest
-            zephell/ttl-im-docker:1.1.${{ env.GITHUB_RUN_ID }}
+            zephell/ttl-im-docker:${{ steps.define_env.outputs.github-sha-short }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
